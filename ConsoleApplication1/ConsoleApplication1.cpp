@@ -41,7 +41,7 @@ int main()
 	cout <<"The marks scored by Roll Number 0 is: " <<test_scores[0] << endl;
 	
 }*/
-
+/*
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -52,7 +52,86 @@ int main()
 	vector <int> test_scores{ 10,20,30,40 };
 	vector <double> days_in_year(365, 90);
 
+	//array syntax
+	cout << days_in_year[9] << endl;
 
+	//vector syntax
+	cout << test_scores.at(0) << endl;
+
+	//use of push_back command
+	test_scores.push_back(80);
+	cout << test_scores[4] << endl;
+
+	//use of size() command
+	cout << "The size of test_score vector is: " << test_scores.size() << endl;
+
+
+}
+
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main()
+{
+	vector <int> vector1;
+	vector <int> vector2;
+
+	vector1.push_back(10);
+	vector1.push_back(20);
+
+	cout << "The element at index 0 is: " << vector1.at(0) << endl;
+	cout << "The element at index 1 is: " << vector1.at(1) << endl;
+	cout << "The total elements in vector1 are: " << vector1.size() << endl;
+
+	vector2.push_back(100);
+	vector2.push_back(200);
+
+	cout << "The element at index 0 is: " << vector2.at(0) << endl;
+	cout << "The element at index 1 is: " << vector2.at(1) << endl;
+	cout << "The total elements in vector2 are: " << vector2.size() << endl;
+
+	vector <vector<int>> vector_2d;
+
+	vector_2d.push_back(vector1);
+	vector_2d.push_back(vector2);
+
+	cout << "The elements in vector_2d at index(0,0) are: " << vector_2d.at(0).at(0) << endl;
+	cout << "The elements in vector_2d at index(0,1) are: " << vector_2d.at(0).at(1) << endl;
+	cout << "The elements in vector_2d at index(1,0) are: " << vector_2d.at(1).at(0) << endl;
+	cout << "The elements in vector_2d at index(1,1) are: " << vector_2d.at(1).at(1) << endl;
+
+	vector1.at(0) = 1000;
+
+	cout << "The elements of vector 1 now are: " << vector1.at(0)<< endl;
+	cout << "The elements of vector 1 now are: " << vector1.at(1) << endl;
+
+	return 0;
+
+
+
+
+
+
+}
+*/
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int counter = 10;
+	int result = 0;
+
+	cout << "Counter's value is: " << counter << endl;
+	result = ++counter + 10;
+	//The above result can be wriiten as;
+	//counter=counter+1;pre increment of counter by 1
+	//result=counter+10; the counter now contains value 11
+
+	cout << "The value of result is: " << result;
+	return 0;
 }
 
 
