@@ -254,7 +254,22 @@ int main()
 	cout << ((score > 90) ?"Excellent Score" :"Not bad") << endl;
 }
 
+===========================================================================================================================================
+//This is a program for Loop with vectors
+===========================================================================================================================================
+#include<iostream>
+#include<vector>
+using namespace std;
 
+int main()
+{
+	vector<int> nums{ 10,20,30,40,50 };
+
+	for (unsigned int i = 0; i < nums.size(); i++)
+		cout << nums.at(i) << endl;	
+}
+
+ 
 
 
 
