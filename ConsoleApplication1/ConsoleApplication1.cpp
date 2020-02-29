@@ -1,7 +1,7 @@
 ========================================================================================================================================
 //This is the program for using const operator.
 ========================================================================================================================================
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 const double price_per_room = 30.0;
@@ -26,11 +26,16 @@ int main()
 
 	return 0;
 }
+<<<<<<< HEAD
+*/
+/*#include<iostream>
+=======
 
 ========================================================================================================================================
 //This is aprogram for array declaration and initialization.
 ========================================================================================================================================
 #include<iostream>
+>>>>>>> 7c6acd8a73f5d4da22686c1764e08ce99f2267e1
 using namespace std;
 
 int main()
@@ -43,12 +48,18 @@ int main()
 	//Setting the value of marks scored by Roll number 0 to 35
 	test_scores[0] = 35;
 	cout <<"The marks scored by Roll Number 0 is: " <<test_scores[0] << endl;
+<<<<<<< HEAD
+
+}*/
+/*
+=======
 	
 }
 
 ========================================================================================================================================
 //This is a program for initial and declaration of vectors.
 ========================================================================================================================================
+>>>>>>> 7c6acd8a73f5d4da22686c1764e08ce99f2267e1
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -166,12 +177,18 @@ int main()
 
 	cout << "The average of numbers is: " << average << endl;
 
+<<<<<<< HEAD
+}
+*/
+/*#include<iostream>
+=======
 } 
 
 ========================================================================================================================================
 //This program demonstrates the use of boolalpha command.	
 ========================================================================================================================================
  #include<iostream>
+>>>>>>> 7c6acd8a73f5d4da22686c1764e08ce99f2267e1
 using namespace std;
 
 int main()
@@ -184,7 +201,7 @@ int main()
 	cout << "Enter a number between: " << lower << "and " << upper;
 	cin >> number;
 
-	bool in_bounds=false; 
+	bool in_bounds=false;
 
 	in_bounds = (number < lower || number >= upper);
 
@@ -193,10 +210,14 @@ int main()
 
 }
 
+<<<<<<< HEAD
+/*#include<iostream>
+=======
 ========================================================================================================================================
 //This is a program for switch case statements.
 ========================================================================================================================================
 #include<iostream>
+>>>>>>> 7c6acd8a73f5d4da22686c1764e08ce99f2267e1
 using namespace std;
 
 int main()
@@ -236,13 +257,23 @@ int main()
 			cout << "You failed here also!!";
 
 	}
-    
+
 	return 0;
+}*/
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int score;
+	cout << "Enter the score: ";
+	cin >> score;
+	cout << ((score > 90) ?"Excellent Score" :"Not bad") << endl;
 }
 
-========================================================================================================================================
 
-========================================================================================================================================
 
 
 
