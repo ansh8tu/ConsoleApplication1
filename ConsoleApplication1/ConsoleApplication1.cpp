@@ -11,15 +11,15 @@ const double tax_per_room = 0.06;
 int main()
 {
 	int number_of_rooms;
-	cout<< "Enter the number of rooms: ";
+	cout << "Enter the number of rooms: ";
 	cin >> number_of_rooms;
 
-	cout << "The price per room is:$ " << price_per_room<<endl;
+	cout << "The price per room is:$ " << price_per_room << endl;
 	double cost = number_of_rooms * price_per_room;
 	cout << "The total price of room is:$ " << cost << endl;
 
 	double total_tax = cost * tax_per_room;
-	cout << "The tax is:$ " << total_tax<< endl;
+	cout << "The tax is:$ " << total_tax << endl;
 
 	double total_cost = cost + total_tax;
 	cout << "The total expense is:$ " << total_cost << endl;
@@ -42,7 +42,7 @@ int main()
 
 	//Setting the value of marks scored by Roll number 0 to 35
 	test_scores[0] = 35;
-	cout <<"The marks scored by Roll Number 0 is: " <<test_scores[0] << endl;
+	cout << "The marks scored by Roll Number 0 is: " << test_scores[0] << endl;
 
 }
 
@@ -114,7 +114,7 @@ int main()
 
 	vector1.at(0) = 1000;
 
-	cout << "The elements of vector 1 now are: " << vector1.at(0)<< endl;
+	cout << "The elements of vector 1 now are: " << vector1.at(0) << endl;
 	cout << "The elements of vector 1 now are: " << vector1.at(1) << endl;
 
 	return 0;
@@ -159,10 +159,10 @@ int main()
 	cin >> num1 >> num2 >> num3;
 
 	sum = num1 + num2 + num3;
-	cout << "The sum of numbers is: " << sum<<endl;
+	cout << "The sum of numbers is: " << sum << endl;
 
 	double average;
-	average = static_cast<double>(sum)/count;
+	average = static_cast<double>(sum) / count;
 
 	cout << "The average of numbers is: " << average << endl;
 
@@ -171,7 +171,7 @@ int main()
 ========================================================================================================================================
 //This program demonstrates the use of boolalpha command.
 ========================================================================================================================================
- #include<iostream>
+#include<iostream>
 using namespace std;
 
 int main()
@@ -184,11 +184,11 @@ int main()
 	cout << "Enter a number between: " << lower << "and " << upper;
 	cin >> number;
 
-	bool in_bounds=false;
+	bool in_bounds = false;
 
 	in_bounds = (number < lower || number >= upper);
 
-	cout << "The number is outside " << lower << "and " << upper<<":" << in_bounds << endl;
+	cout << "The number is outside " << lower << "and " << upper << ":" << in_bounds << endl;
 
 
 }
@@ -207,33 +207,33 @@ int main()
 
 	switch (result)
 	{
-		case 'a':
-		case 'A' :
-			cout << "Great now you need to focus on your studies to score this grade" << endl;
-			break;
+	case 'a':
+	case 'A':
+		cout << "Great now you need to focus on your studies to score this grade" << endl;
+		break;
 
-		case 'b' :
-		case 'B' :
-			cout << "Okay but I guess you need to give some more efforts: "<<endl;
-			break;
+	case 'b':
+	case 'B':
+		cout << "Okay but I guess you need to give some more efforts: " << endl;
+		break;
 
-		case 'c' :
-		case 'C' :
-			cout << "Okay!! Focus on studies from now" << endl;
-			break;
+	case 'c':
+	case 'C':
+		cout << "Okay!! Focus on studies from now" << endl;
+		break;
 
-		case 'd' :
-		case 'D' :
-			cout << "Expect More from life" << endl;
-			break;
+	case 'd':
+	case 'D':
+		cout << "Expect More from life" << endl;
+		break;
 
-		case 'e' :
-		case 'E' :
-			cout << "If you can't score more, atleast you can expect lol" << endl;
-			break;
+	case 'e':
+	case 'E':
+		cout << "If you can't score more, atleast you can expect lol" << endl;
+		break;
 
-		default :
-			cout << "You failed here also!!";
+	default:
+		cout << "You failed here also!!";
 
 	}
 
@@ -251,12 +251,12 @@ int main()
 	int score;
 	cout << "Enter the score: ";
 	cin >> score;
-	cout << ((score > 90) ?"Excellent Score" :"Not bad") << endl;
+	cout << ((score > 90) ? "Excellent Score" : "Not bad") << endl;
 }
 
-===========================================================================================================================================
+=========================================================================================================================================== 
 //This is a program for Loop with vectors
-===========================================================================================================================================
+=========================================================================================================================================== 
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -268,10 +268,10 @@ int main()
 	for (unsigned int i = 0; i < nums.size(); i++)
 		cout << nums.at(i) << endl;
 }
- 
-===========================================================================================================================================
+
+============================================================================================================================================
 //This is a code for range based for loop
-===========================================================================================================================================
+============================================================================================================================================
 
 #include<iostream>
 #include<vector>
@@ -289,37 +289,31 @@ int main()
 		cout << "The sum of temperatures is: " << sum << endl;
 	}
 
-	average = sum/ temperature.size();
+	average = sum / temperature.size();
 	cout << fixed << setprecision(1);
 	cout << "The average is: " << average << endl;
-	
+
 }
 
+===============================================================================================================================================
+//This is aprogram for while loop
+===============================================================================================================================================
 
+#include<iostream>
+using namespace std;
+int i = 0;
 
+int main()
+{
 
+	while (i <= 10)
+	{
+		if (i % 2 == 0)
+		{
+			cout <<i<< endl; 
+		}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		i++; 
+	}
+}
 
