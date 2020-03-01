@@ -357,3 +357,29 @@ int main()
 	return 0;
 
 }
+
+=================================================================================================================================================
+//This program demonstrates the use of c style strings.
+=================================================================================================================================================
+#include<iostream>
+#include<cstring>
+#include<cctype>
+using namespace std;
+
+int main()
+{
+	char first_name[20];
+	char last_name[20];
+	char full_name[50];
+	char temp[50];
+
+	cout << "Please insert your first name: ";
+	cin >> first_name;
+
+	cout << "Please insert your last name: ";
+	cin >> last_name;
+
+	cout << "Hello" << first_name << "your name has " << strlen(first_name) << "characters" << endl;
+	cout << "Hello" << last_name << "your name has " << strlen(last_name) << "characters" << endl;
+
+}
