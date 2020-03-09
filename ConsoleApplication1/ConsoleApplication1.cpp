@@ -413,7 +413,7 @@ int main()
 }
 
 ================================================================================================================================================
-//This is a program for pointers 
+//This is a program for pointers
 ================================================================================================================================================
 
 #include<iostream>
@@ -476,7 +476,7 @@ int main()
 	(*enemy).name = "Anshuman";
 	enemy->health = 100;
 	enemy->xp = 50;
-	
+
 	cout << "========================================" << endl;
 	cout << "The Name of enemy is: " << (*enemy).name << endl;
 	cout << "The Health of enemy is: " << enemy->health << endl;
@@ -583,6 +583,53 @@ int main()
 
 	cout << endl;
 }
+
+================================================================================================================================================
+//This is a code for Inheritance of constructor and destructor
+================================================================================================================================================
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Base
+{
+public:
+	Base()
+	{
+		cout<< "This is a base constructor" << endl;
+	}
+	~Base()
+	{
+		cout << "This is a base destructor" << endl;
+	}
+
+
+};
+
+class Derived :public Base
+{
+private:
+	int doubled_value;
+
+public:
+	Derived()
+	{
+		cout << "This is is a derived constructor" << endl;
+	}
+
+	~Derived()
+	{
+		cout << "This is a derived destructor" << endl;
+	}
+};
+
+int main()
+{
+	Base b;
+	Derived d;
+}
+
 
 
 
